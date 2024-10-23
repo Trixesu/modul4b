@@ -21,7 +21,13 @@ public class dZodiac {
         String zodiac = "";
         String sifat = "";
                 
-        if ((tanggal >= 21 && bulan == 3) || (tanggal <= 19 && bulan == 4)) {
+        if ((tanggal >= 20 && bulan == 1)||(tanggal <= 18 && bulan == 2)) {
+            zodiac = "Aquarius";
+            sifat = "Analistis, Imajinatif, Unik dan Tidak kenal kompromi";
+        } else if ((tanggal >= 19 && bulan == 2)||(tanggal <= 20 && bulan == 3)) {
+            zodiac = "Pisces";
+            sifat = "Penuh kasih sayang, Empati, Bijaksana dan Artistik";
+        } else if ((tanggal >= 21 && bulan == 3) || (tanggal <= 19 && bulan == 4)) {
             zodiac = "Aries";
             sifat = "Bersemangat, Dinamis, Tanggap dan Kompetitif";
         } else if ((tanggal >= 20 && bulan == 4)||(tanggal <= 20 && bulan == 5)) {
@@ -51,12 +57,6 @@ public class dZodiac {
         } else if ((tanggal >= 22 && bulan == 12)||(tanggal <= 19 && bulan == 1)) {
             zodiac = "Capricorn";
             sifat = "Serius, Mandiri, Disiplin dan Ulet";
-        } else if ((tanggal >= 20 && bulan == 1)||(tanggal <= 18 && bulan == 2)) {
-            zodiac = "Aquarius";
-            sifat = "Analistis, Imajinatif, Unik dan Tidak kenal kompromui";
-        } else if ((tanggal >= 19 && bulan == 2)||(tanggal <= 20 && bulan == 3)) {
-            zodiac = "Pisces";
-            sifat = "Penuh kasih sayang, Empati, Bijaksana dan Artistik";
         } else {
             System.out.println("Tanggal dan bulan yang dimasukkan tidak valid");
         }
