@@ -12,8 +12,8 @@ public class aAkarPersamaan {
         System.out.println(" Koefisien x (b) : ");
         b = dataKuadrat.nextDouble();
         System.out.println(" Konstanta (c) : ");
-        
         c = dataKuadrat.nextDouble();
+        
         D = b* b - (4*a*c);
         
         if (D <0 ){
