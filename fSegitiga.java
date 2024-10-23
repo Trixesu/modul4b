@@ -7,19 +7,19 @@ public class fSegitiga {
         Scanner input = new Scanner(System.in);
         
         System.out.print("Sisi a : ");
-        int sisiA = input.nextInt();
+        double sisiA = input.nextDouble();
         
         System.out.print("Sisi b : ");
-        int sisiB = input.nextInt();
+        double sisiB = input.nextDouble();
         
         System.out.print("Sisi c : ");
-        int sisiC = input.nextInt();
+        double sisiC = input.nextDouble();
         
         if (sisiA + sisiB <= sisiC || sisiA + sisiC <= sisiB || sisiB + sisiC <= sisiA) {
             System.out.println("Bukan Segitiga");
         } else if (Math.pow(sisiC, 2) == (Math.pow(sisiA, 2)) + (Math.pow(sisiB, 2))) {
             System.out.println("Segitiga siku-siku");
-        } else if (sisiA == sisiB || sisiA == sisiC || sisiB == sisiC){
+        } else if (sisiA == sisiB || sisiA == sisiC || sisiB == sisiC){ 
             System.out.println("Segitiga sama kaki");
         } else if (sisiA == sisiB && sisiB == sisiC) {
             System.out.println("Segitiga sama sisi");
